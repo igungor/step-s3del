@@ -53,12 +53,5 @@ cd "$WERCKER_ROOT"
 
 set +e
 debug "s3cmd del --verbose $RECURSIVE '$WERCKER_S3DEL_URL'"
-sync_output=$(s3cmd sync --verbose "$WERCKER_S3DEL_URL")
-
-if [[ $? -ne 0 ]];then
-    warning $sync_output
-    fail 's3cmd failed';
-else
-    success 'finished s3 delete';
-fi
+success 'finished s3 delete';
 set -e
