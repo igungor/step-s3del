@@ -21,7 +21,8 @@ You can use application and deployment variables in wercker.
     - s3del:
         key-id:     $KEY
         key-secret: $SECRET
-        recursive:  s3://mybucket/myproject/
+        recursive:  true
+        url:        s3://mybucket/myproject/
 
 [Wercker]: http://wercker.com
 [Amazon S3]: http://aws.amazon.com/s3
