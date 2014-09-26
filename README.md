@@ -4,8 +4,6 @@
 
 You can use application and deployment variables in wercker.
 
-View this step in the [wercker directory][wd]
-
 ## Options
 
 * `key-id` (required) The Amazon Access key that will be used for authorization.
